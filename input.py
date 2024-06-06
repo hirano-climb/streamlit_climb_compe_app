@@ -103,7 +103,6 @@ def input():
         st.write(f'・完登した課題の番号  \n{join_list}')
         con = st.button("送信")
         if con:
-            main_db.create_table()  
             main_db.replace_table(
                 name, 
                 category, 
@@ -118,6 +117,7 @@ def input():
     
     if con_btn: 
         if name and category and time_category and result:           
+            main_db.create_table()
             sub_btn()             
         else:
             st.warning("入力されていない項目があります")
