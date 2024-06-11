@@ -110,10 +110,6 @@ def input():
                 join_list
                 )
             st.success("送信が完了しました")
-            ss.n = None
-            ss.c = None
-            ss.t = None
-            ss.r = []
     
     if con_btn: 
         if name and category and time_category and result:           
