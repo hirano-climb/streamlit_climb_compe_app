@@ -22,8 +22,8 @@ def create_table():
     create_table = 'CREATE TABLE IF NOT EXISTS admin(username TEXT PRIMARY KEY, password TEXT)'
     c.execute(create_table)
     
-    user_default = 'hirano'
-    pass_default = 'agtm'
+    user_default = 'abc'
+    pass_default = '123'
     pass_hashes = make_hashes(pass_default)
     admin_table = 'REPLACE INTO admin(username, password) VALUES (?, ?)'
     c.execute(admin_table, (user_default, pass_hashes))  
