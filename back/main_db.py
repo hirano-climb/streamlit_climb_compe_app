@@ -51,9 +51,6 @@ def delete_table():
     drop_table = 'DROP TABLE IF EXISTS profile_result'
     c.execute(drop_table)
     con.commit()
-    data = c.fetchall()
-    for d in data:
-        st.write(d)
     
     c.close()
     con.close()
