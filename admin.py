@@ -36,13 +36,7 @@ def admin():
             st.sidebar.success('ログインしました')          
         else:
             st.sidebar.warning('入力に誤りがあります')
-    
-    st.sidebar.divider()
-    logout_btn = st.sidebar.button('ログアウト')
-    if logout_btn:
-        st.sidebar.success('ログアウトしました') 
-        ss.push_2 = 0 
-            
+		
     if ss.push_2 == 1:      
         st.subheader('administrator form')
 
