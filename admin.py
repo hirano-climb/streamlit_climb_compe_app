@@ -1,9 +1,5 @@
 import streamlit as st
-import sqlite3
 from back import main_db, admin_db, excel
-import pandas as pd
-import openpyxl as op
-from io import BytesIO
 
 
 def admin(): 
