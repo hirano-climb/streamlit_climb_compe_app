@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-import sqlite3
 from back import main_db
 
 
