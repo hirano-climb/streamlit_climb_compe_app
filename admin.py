@@ -64,13 +64,19 @@ def admin():
         exe_btn = st.button('実行')
         if exe_btn:            
             if admin_category == '入力データを確認します':
-                main_db.check_table()
-                st.success('入力データの確認が完了しました')                             
+                try:
+                    main_db.check_table()
+                    st.success('入力データの確認が完了しました')
+                except Exception:
+                    st.warning("入力データがありません")    
             elif admin_category == '入力データを全て削除します':
                 ap_btn()
             elif admin_category == '入力データをexcelファイルで出力します':
-                excel.create_excel()
-                dw_btn()
+                try:
+                    excel.create_excel()
+                    dw_btn()
+                except Exception:
+                    st.warning("入力データがありません")
             else:
                 st.warning("入力されていない項目があります")
         
