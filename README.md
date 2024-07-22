@@ -4,7 +4,10 @@
 <br>
 
 # URL
-[streamlit climb compe result](https://appclimbcompeapp-8qmglktavkwftccrnafe4r.streamlit.app/)
+[streamlit climb compe result](https://appclimbcompeapp-8qmglktavkwftccrnafe4r.streamlit.app/)<br>
+管理ページログイン
+テスト用ユーザ名：abc<br>
+テスト用パスワード：123<br>
 <br>
 <br>
 
